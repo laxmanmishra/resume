@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laxman Mishra - Digital CV</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="profile-section">
+                <div class="profile-image">
+                    <img src="profile.jpg" alt="Laxman Mishra" class="profile-photo">
+                </div>
+                <div class="profile-info">
+                    <h1 class="name">Laxman Mishra</h1>
+                    <p class="title">Associate Lead Programmer</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 9454045599</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>laxmanmishrabbk@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Bangalore, India</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="navigation">
+            <ul>
+                <li><a href="#summary" class="nav-link active">Summary</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#personal" class="nav-link">Personal</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Executive Summary Section -->
+            <section id="summary" class="section active">
+                <h2 class="section-title">Executive Summary</h2>
+                <div class="summary-content">
+                    <p class="objective">Seeking opportunity in Software Development / R&D with an organization of high repute and an valuable asset to the organization</p>
+                    
+                    <div class="highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-briefcase"></i>
+                            <div>
+                                <h3>6.5 Years Experience</h3>
+                                <p>Currently working as Associate Lead Programmer at EI Design (Powered by MPS)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-item">
+                            <i class="fas fa-code"></i>
+                            <div>
+                                <h3>Full Stack Development</h3>
+                                <p>Expert in PHP, MySQL, HTML, CSS, AngularJS, jQuery, JavaScript, REST APIs</p>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <div>
+                                <h3>Modern Technologies</h3>
+                                <p>Knowledge in Node.js, React Native, ExpressJS, Bootstrap, Material Design</p>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-item">
+                            <i class="fas fa-credit-card"></i>
+                            <div>
+                                <h3>Payment Integration</h3>
+                                <p>PayPal, Udio, payUMoney, Razor Pay integration expertise</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Professional Experience Section -->
+            <section id="experience" class="section">
+                <h2 class="section-title">Professional Experience</h2>
+                <div class="experience-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Associate Lead Programmer</h3>
+                            <h4>EI Design (Powered by MPS)</h4>
+                            <p class="duration">July 2018 - Present</p>
+                            <ul class="responsibilities">
+                                <li>Leading development teams and managing complex web applications</li>
+                                <li>Implementing advanced PHP solutions with modern frameworks</li>
+                                <li>Integrating payment gateways and third-party APIs</li>
+                                <li>Mentoring junior developers and code review processes</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Software Engineer</h3>
+                            <h4>Briskon Pvt. Ltd</h4>
+                            <p class="duration">August 2015 - August 2018</p>
+                            <ul class="responsibilities">
+                                <li>Developed web applications using PHP and MySQL</li>
+                                <li>Implemented responsive front-end designs</li>
+                                <li>Worked on CodeIgniter framework projects</li>
+                                <li>Integrated social media login systems</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="section">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Programming Languages</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">PHP</span>
+                            <span class="skill-tag">ASP.NET Core</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Node.js</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Frontend Technologies</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">AngularJS</span>
+                            <span class="skill-tag">jQuery</span>
+                            <span class="skill-tag">Bootstrap</span>
+                            <span class="skill-tag">Material Design</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Backend & Database</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">SQL Server</span>
+                            <span class="skill-tag">SQLite</span>
+                            <span class="skill-tag">REST APIs</span>
+                            <span class="skill-tag">ExpressJS</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Frameworks & Tools</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">CodeIgniter</span>
+                            <span class="skill-tag">Moodle</span>
+                            <span class="skill-tag">React Native</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Bitbucket</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Development Environment</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Visual Studio Code</span>
+                            <span class="skill-tag">PHPStorm</span>
+                            <span class="skill-tag">Notepad++</span>
+                            <span class="skill-tag">Windows</span>
+                            <span class="skill-tag">Linux</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Integrations</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">PayPal</span>
+                            <span class="skill-tag">Razor Pay</span>
+                            <span class="skill-tag">Google APIs</span>
+                            <span class="skill-tag">FCM Push Notifications</span>
+                            <span class="skill-tag">Social Login</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>AI Tools & Technologies</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">ChatGPT</span>
+                            <span class="skill-tag">GitHub Copilot</span>
+                            <span class="skill-tag">AI Code Generation</span>
+                            <span class="skill-tag">Machine Learning APIs</span>
+                            <span class="skill-tag">AI-Powered Development</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>E-Learning & LMS</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">SCORM</span>
+                            <span class="skill-tag">LMS Development</span>
+                            <span class="skill-tag">Moodle</span>
+                            <span class="skill-tag">E-Learning Platforms</span>
+                            <span class="skill-tag">Learning Content Management</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Personal Details Section -->
+            <section id="personal" class="section">
+                <h2 class="section-title">Personal Details</h2>
+                <div class="personal-info">
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <i class="fas fa-calendar"></i>
+                            <div>
+                                <h4>Date of Birth</h4>
+                                <p>December 2, 1991</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <i class="fas fa-heart"></i>
+                            <div>
+                                <h4>Marital Status</h4>
+                                <p>Married</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <i class="fas fa-language"></i>
+                            <div>
+                                <h4>Languages</h4>
+                                <p>English, Hindi</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <i class="fas fa-flag"></i>
+                            <div>
+                                <h4>Nationality</h4>
+                                <p>Indian</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h4>Education</h4>
+                                <p>Bachelor's Degree in Computer Science</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item full-width">
+                            <i class="fas fa-home"></i>
+                            <div>
+                                <h4>Address</h4>
+                                <p>No-25, Flat No- 302, 3rd Floor, Behind Spurthy Hospital, Chocolate Factory Road, Maruti Nagar, BTM 1st Stage Bangalore -560029</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2025 Laxman Mishra. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/laxmanmishra/" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/laxmanmishra" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="mailto:laxmanmishrabbk@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
