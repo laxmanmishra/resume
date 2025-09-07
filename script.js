@@ -474,53 +474,33 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Form handling
     function handleForms() {
-        // Contact form submission
+        // Contact form submission - Allow normal submission to FormSubmit.co
         const contactForm = document.getElementById('contactForm');
         if (contactForm) {
             contactForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                const formData = new FormData(this);
-                const data = Object.fromEntries(formData);
-                
-                // Show success message
+                // Show loading state before submission
                 const submitBtn = this.querySelector('.submit-btn');
                 const originalText = submitBtn.innerHTML;
-                submitBtn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
-                submitBtn.style.background = 'linear-gradient(135deg, #27ae60, #2ecc71)';
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+                submitBtn.disabled = true;
                 
-                // Reset form after delay
-                setTimeout(() => {
-                    this.reset();
-                    submitBtn.innerHTML = originalText;
-                    submitBtn.style.background = 'linear-gradient(135deg, #3498db, #2980b9)';
-                }, 2000);
-                
-                console.log('Contact form submitted:', data);
+                // Allow form to submit normally to FormSubmit.co
+                // Don't prevent default - let the form submit
             });
         }
 
-        // Feedback form submission
+        // Feedback form submission - Allow normal submission to FormSubmit.co
         const feedbackForm = document.getElementById('feedbackForm');
         if (feedbackForm) {
             feedbackForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                const formData = new FormData(this);
-                const data = Object.fromEntries(formData);
-                
-                // Show success message
+                // Show loading state before submission
                 const submitBtn = this.querySelector('.submit-btn');
                 const originalText = submitBtn.innerHTML;
-                submitBtn.innerHTML = '<i class="fas fa-heart"></i> Thank You!';
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+                submitBtn.disabled = true;
                 
-                // Reset form after delay
-                setTimeout(() => {
-                    this.reset();
-                    submitBtn.innerHTML = originalText;
-                }, 2000);
-                
-                console.log('Feedback form submitted:', data);
+                // Allow form to submit normally to FormSubmit.co
+                // Don't prevent default - let the form submit
             });
         }
     }
