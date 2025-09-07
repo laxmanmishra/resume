@@ -381,7 +381,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Initialize additional features
-    addPrintButton();
+    // addPrintButton(); // Hidden as requested
     addDownloadButton();
 
     // Add loading animation
@@ -471,6 +471,61 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     addScrollToTop();
+
+    // Form handling
+    function handleForms() {
+        // Contact form submission
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const formData = new FormData(this);
+                const data = Object.fromEntries(formData);
+                
+                // Show success message
+                const submitBtn = this.querySelector('.submit-btn');
+                const originalText = submitBtn.innerHTML;
+                submitBtn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
+                submitBtn.style.background = 'linear-gradient(135deg, #27ae60, #2ecc71)';
+                
+                // Reset form after delay
+                setTimeout(() => {
+                    this.reset();
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.style.background = 'linear-gradient(135deg, #3498db, #2980b9)';
+                }, 2000);
+                
+                console.log('Contact form submitted:', data);
+            });
+        }
+
+        // Feedback form submission
+        const feedbackForm = document.getElementById('feedbackForm');
+        if (feedbackForm) {
+            feedbackForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const formData = new FormData(this);
+                const data = Object.fromEntries(formData);
+                
+                // Show success message
+                const submitBtn = this.querySelector('.submit-btn');
+                const originalText = submitBtn.innerHTML;
+                submitBtn.innerHTML = '<i class="fas fa-heart"></i> Thank You!';
+                
+                // Reset form after delay
+                setTimeout(() => {
+                    this.reset();
+                    submitBtn.innerHTML = originalText;
+                }, 2000);
+                
+                console.log('Feedback form submitted:', data);
+            });
+        }
+    }
+
+    handleForms();
 
     console.log('Digital CV loaded successfully! 🚀');
 });

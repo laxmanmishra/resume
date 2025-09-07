@@ -46,6 +46,8 @@
                 <li><a href="#experience" class="nav-link">Experience</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#personal" class="nav-link">Personal</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#feedback" class="nav-link">Feedback</a></li>
             </ul>
         </nav>
 
@@ -276,6 +278,122 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            <!-- Contact Form Section -->
+            <section id="contact" class="section">
+                <h2 class="section-title">Contact Me</h2>
+                <div class="form-container">
+                    <div class="form-intro">
+                        <p>Have a project in mind or want to discuss opportunities? I'd love to hear from you!</p>
+                    </div>
+                    <form id="contactForm" class="contact-form" action="https://formsubmit.co/laxmanmishrabbk@email.com" method="POST" >
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactName">Full Name *</label>
+                                <input type="text" id="contactName" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail">Email Address *</label>
+                                <input type="email" id="contactEmail" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactPhone">Phone Number</label>
+                                <input type="tel" id="contactPhone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="contactCompany">Company/Organization</label>
+                                <input type="text" id="contactCompany" name="company">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactSubject">Subject *</label>
+                            <select id="contactSubject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="job-opportunity">Job Opportunity</option>
+                                <option value="freelance-project">Freelance Project</option>
+                                <option value="collaboration">Collaboration</option>
+                                <option value="consultation">Consultation</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">Message *</label>
+                            <textarea id="contactMessage" name="message" rows="5" required placeholder="Tell me about your project or opportunity..."></textarea>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="submit-btn">
+                                <i class="fas fa-paper-plane"></i>
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Feedback Form Section -->
+            <section id="feedback" class="section">
+                <h2 class="section-title">Feedback & Suggestions</h2>
+                <div class="form-container">
+                    <div class="form-intro">
+                        <p>Your feedback helps me improve! Share your thoughts about this digital CV or suggest improvements.</p>
+                    </div>
+                    <form id="feedbackForm" class="feedback-form" action="https://formsubmit.co/laxmanmishrabbk@email.com" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="feedbackName">Your Name</label>
+                                <input type="text" id="feedbackName" name="name" placeholder="Optional">
+                            </div>
+                            <div class="form-group">
+                                <label for="feedbackEmail">Email (Optional)</label>
+                                <input type="email" id="feedbackEmail" name="email" placeholder="If you'd like a response">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="feedbackType">Feedback Type *</label>
+                            <select id="feedbackType" name="type" required>
+                                <option value="">Select feedback type</option>
+                                <option value="design">Design & UI/UX</option>
+                                <option value="content">Content & Information</option>
+                                <option value="functionality">Functionality & Features</option>
+                                <option value="performance">Performance & Speed</option>
+                                <option value="mobile">Mobile Experience</option>
+                                <option value="suggestion">General Suggestion</option>
+                                <option value="bug">Bug Report</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="feedbackRating">Overall Rating</label>
+                            <div class="rating-container">
+                                <div class="star-rating">
+                                    <input type="radio" id="star5" name="rating" value="5">
+                                    <label for="star5" class="star">★</label>
+                                    <input type="radio" id="star4" name="rating" value="4">
+                                    <label for="star4" class="star">★</label>
+                                    <input type="radio" id="star3" name="rating" value="3">
+                                    <label for="star3" class="star">★</label>
+                                    <input type="radio" id="star2" name="rating" value="2">
+                                    <label for="star2" class="star">★</label>
+                                    <input type="radio" id="star1" name="rating" value="1">
+                                    <label for="star1" class="star">★</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="feedbackMessage">Your Feedback *</label>
+                            <textarea id="feedbackMessage" name="message" rows="5" required placeholder="Share your thoughts, suggestions, or report any issues..."></textarea>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="submit-btn feedback-btn">
+                                <i class="fas fa-comment"></i>
+                                Submit Feedback
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </section>
         </main>
